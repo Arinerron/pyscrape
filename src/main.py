@@ -50,7 +50,8 @@ class commands:
                     if examples:
                         print('    Examples:')
                         for example in definition['examples']:
-                            print('      ' + sys.argv[0] + ' <-' + definition['name'][0] + '/--' + definition['name'][1] + '> ' + example + '\n')
+                            print('      ' + sys.argv[0] + ' <-' + definition['name'][0] + '/--' + definition['name'][1] + '> ' + example)
+                        print()
                 else:
                     logging.error('Error: That parameter does not exist.', end = True)
             pass
